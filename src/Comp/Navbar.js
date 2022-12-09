@@ -18,23 +18,23 @@ export default function Navbar() {
       <div className='container py-3  '>
         <ul className=' list-unstyled d-flex gap-3 justify-content-between  m-0 '>
           <li>
-            <Link to="/" className='text-decoration-none text-reset d-none d-lg-block  '><button type="button" className="btn cool px-5 py-1" >Home</button></Link>
+            <Link to="/Hospital-website" className='text-decoration-none text-reset d-none d-lg-block  '><button type="button" className="btn cool px-5 py-1" ><small>Home</small></button></Link>
           </li>
           <li>
-            <Link to="/medical-services" className='text-decoration-none text-reset'><button type="button" className="btn cool px-4 py-1">Medical Services</button></Link>
+            <Link to="/medical-services" className='text-decoration-none text-reset'><button type="button" className="btn cool px-4 py-1"><small>Services</small></button></Link>
           </li>
           <li>
-            <Link to="/medical-research" className='text-decoration-none text-reset'><button type="button" className="btn cool px-4 py-1">Clinical Research</button></Link>
+            <Link to="/medical-research" className='text-decoration-none text-reset'><button type="button" className="btn cool px-4 py-1"><small>Research</small></button></Link>
           </li>
           <li>
-            <Link to="/find-a-doctor" className='text-decoration-none text-reset d-none d-lg-block'><button type="button" className="btn cool px-4 py-1">Find a doctor</button></Link>
+            <Link to="/find-a-doctor" className='text-decoration-none text-reset d-none d-lg-block'><button type="button" className="btn cool px-4 py-1"><small>Find a doctor</small></button></Link>
           </li>
           
           <li>
-            <Link to="/book-an-appointment" className='text-decoration-none text-reset'><button type="button" className="btn cool px-4 py-1">Appointment</button></Link>
+            <Link to="/book-an-appointment" className='text-decoration-none text-reset'><button type="button" className="btn cool px-3 py-1"><small>Appointment</small></button></Link>
           </li>
           <li>
-            <Link to="/about-us" className='text-decoration-none text-reset d-none d-lg-block'><button type="button" className="btn cool px-5 py-1">About US</button></Link>
+            <Link to="/about-us" className='text-decoration-none text-reset d-none d-lg-block'><button type="button" className="btn cool px-5 py-1"><small>About US</small></button></Link>
           </li>
         </ul>
       </div>
@@ -43,7 +43,7 @@ export default function Navbar() {
  
     <Routes>
       
-      <Route path='/' element={<Home />} />
+      <Route path='/Hospital-website' element={<Home />} />
       <Route path='/medical-services' element={<Services />} />
       <Route path='/find-a-doctor' element={<Find />} />
       <Route path='/medical-research' element={<Research />} />

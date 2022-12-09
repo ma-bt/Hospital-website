@@ -6,6 +6,7 @@ import HomePic from "../images/homepic.jpg"
 import Home2 from "../images/home2.jpg"
 import Home3 from "../images/home3"
 import Home4 from "../images/home4.jpg"
+import Footer from '../Comp/Footer'
 
 
 export default function Home() {
@@ -162,6 +163,7 @@ export default function Home() {
 
         </div>
       </section>
+      
     </>
   )
 }

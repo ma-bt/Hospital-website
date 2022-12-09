@@ -1,5 +1,5 @@
 import React from 'react'
-import  { Doctor } from '../Data/Data'
+import { Doctor } from '../Data/Data'
 import img from "../images/doctor.jpg"
 
 export default function Find() {
@@ -29,21 +29,24 @@ export default function Find() {
           <div className='row'>
             {Doctor.map((a, index) => (
 
-              <div className='col-lg-4'>
-                <div className="card  m-auto shadow p-3 mb-5 bg-body rounded " style={{ width: '22rem', height: '34rem' }}>
-                  <img src={img} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">{a.title}</h5>
-                    <p className="card-text">{a.body}</p>
-                    <div className='d-flex justify-content-between abcd'>
+              <div className='col-lg-4 col-md-6'>
+                <div className="card  m-auto shadow p-3 mb-5 bg-body rounded " style={{ width: '19rem', height: '32rem' }}>
+                  <img src={img} className="card-img-top" alt="..." style={{
+                    width: '270px',
+                    margin: 'auto'
+                  }} />
+                    <div className="card-body">
+                      <h6 className="card-title pb-1">{a.title}</h6>
+                      <small className="card-text">{a.body}</small>
+                      <div className='d-flex justify-content-between abcd mt-3'>
 
-                      <a href="/book-an-appointment" className="btn btn-primary " style={{height: '2rem'}}> <p className='text-reset'>Book an appointment </p></a>
+                        <a href="/book-an-appointment" className="btn btn-primary " style={{ height: '2rem' }}> <p className='text-reset'>Appointment </p></a>
 
 
-                        <a href="/" className="btn btn-primary" style={{height: '2rem'}}> <p className='text-reset text-center' >View more </p></a>
+                        <a href="/" className="btn btn-primary" style={{ height: '2rem' }}> <p className='text-reset text-center' >View more </p></a>
+                      </div>
+
                     </div>
-
-                  </div>
                 </div>
 
               </div>

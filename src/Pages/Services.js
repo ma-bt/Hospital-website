@@ -27,14 +27,16 @@ export default function Services() {
             <div className='row'>
               {Data.map((a, index) => (
                 
-                  <div className='col-lg-4'>
-                    <div className="card p-4 m-3 shadow p-3 mb-5 bg-body rounded " style={{ width: '22rem',height:'17rem' }}>
+                  <div className='col-lg-4 col-md-6'>
+                    <div className="card p-2 m-3 shadow p-2 mb-5 bg-body rounded " style={{ width: '19rem',height:'16rem' }}>
                       <div className="card-body  ">
                         <div >
                           <h5 className="card-title cool2 fw-3">{a.title}</h5>
-                          <p className="card-text fw-light ">{a.body}</p>
+                          <small className="card-text fw-light ">{a.body}</small>
+                          <div className="py-3 d-flex justify-content-between">
                           <a href="" className="card-link text-decoration-none">Visit</a>
                           <a href="/book-an-appointment" className="card-link text-decoration-none">Book an appoinment</a>
+                        </div>
                         </div>
                       </div>
                     </div>

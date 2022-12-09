@@ -10,7 +10,7 @@ export default function Header() {
                     <div className='row py-2 d-flex justify-content-between  '>
 
                         
-                        <div className='col-lg-6 '> <Link to='/' className='text-decoration-none text-reset'><h2 className=' fw-bold'>MAAMS</h2></Link></div>
+                        <div className='col-lg-6 '> <Link to='/Hospital-website' className='text-decoration-none text-reset'><h2 className=' fw-bold'>MAAMS</h2></Link></div>
                         <div className='col-lg-6 d-none d-lg-block '>
                             <ul className='list-unstyled d-flex gap-3 justify-content-end m-0 '>
                                 <li>
